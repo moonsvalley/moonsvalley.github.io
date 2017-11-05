@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<div class="posts">
+  {% for post in site.posts %}
+
+    {% if post.category == 'works' %}
+
+      {% include posts_list.html %}
+
+    {% endif %}
+
+  {% endfor %}
+</div>
